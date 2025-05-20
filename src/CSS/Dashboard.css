@@ -1,0 +1,185 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    background-color: #e0f2fe;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 2rem 2rem;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #93c5fd;
+    padding-bottom: 0.5rem;
+}
+
+.dashboard-header h1 {
+    color: #1e3a8a;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.logout-btn {
+    color: #1d4ed8;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.welcome {
+    font-size: 1.1rem;
+    color: #374151;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tds-circle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+.tds-subtext {
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.tds-status {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #1d4ed8;
+}
+
+.temp-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.temp-value {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #1d4ed8;
+}
+/* Add to the bottom of Dashboard.css */
+
+.tds-history {
+    margin-top: 2rem;
+}
+
+.tds-history ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.tds-history-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.tds-history-item:last-child {
+    border-bottom: none;
+}
+.login-page {
+    background-color: #e6f0fa; /* same light blue as dashboard */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: white;
+    padding: 2.5rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    width: 350px;
+    max-width: 90%;
+}
+
+.login-title {
+    color: #1e40af; /* same dark blue as your dashboard header */
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-label {
+    font-weight: 600;
+    color: #334155; /* dark gray-blue */
+    margin-bottom: 0.4rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.login-input {
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    border: 1.8px solid #cbd5e1;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.login-input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+.login-button {
+    margin-top: 2rem;
+    background-color: #2563eb; /* bright blue */
+    color: white;
+    padding: 0.7rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover {
+    background-color: #1d4ed8;
+}
